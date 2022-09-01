@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href ="css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   
 
 </head>
@@ -54,7 +57,7 @@
         </nav>
     </div>
        
-     <div class = 'boxthings' display = grid>       
+     <div class = 'boxthingsb' display = grid>       
 
         <div class="boxthings8">
             <div class = "card-header">ABOUT</div>
@@ -66,9 +69,47 @@
            
         <div class="boxthings9">
                 
-            <img class = 'aboutimage' src = "https://scontent.flba3-2.fna.fbcdn.net/v/t39.30808-6/259152350_6458665080872725_5766343846619265094_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeGTl449kpkv27MDoxDDUHHlANKwx037aZwA0rDHTftpnIFZOK9pA-h3Z08BuVuUkueZCL5lL2x4_yaqyf1k9g9E&_nc_ohc=5yg2WM-1lqYAX-v8Tfi&_nc_ht=scontent.flba3-2.fna&oh=00_AT8wQq2vM-_j4irt9ZEP9P7wN76h0PlGSieqn_m8FhkqPw&oe=6211CEDC">
+            <div class="slideshow-containerc fade">
 
-            <div class = "card-header">STUDIO</div>
+                <!-- Full images with numbers and message Info -->
+                <div class="Containersb">
+                <img src="/images/drumkit2.jpg" style="height:100%; display: block; margin-right: auto; margin-left: auto;">
+                </div>
+            
+                <div class="Containersb">
+                <img src="/images/drumkit3.jpg" style="height:100%; display: block; margin-right: auto; margin-left: auto;">
+                </div>
+            
+                <div class="Containersb">
+                <img src="/images/dualguitar.jpg" style="height:100%; display: block; margin-right: auto; margin-left: auto;">
+                </div>
+            
+                <div class="Containersb">
+                <img src="/images/hihat.jpg" style="height:100%; display: block; margin-right: auto; margin-left: auto;">
+                </div>
+                
+                <div class="Containersb">
+                <img src="/images/kitstorage.jpg" style="height:100%; display: block; margin-right: auto; margin-left: auto;">
+                </div>
+                
+                <div class="Containersb">
+                <img src="/images/microphone.jpg" style="height:100%; display: block; margin-right: auto; margin-left: auto;">
+                </div>
+                
+                <div class="Containersb">
+                <img src="/images/guitar2.jpg" style="height:100%; display: block; margin-right: auto; margin-left: auto;">
+                </div>
+
+                <div class="Containersb">
+                <img src="/images/racktom.jpg" style="height:100%; display: block; margin-right: auto; margin-left: auto;">
+                </div>
+                
+                <div class="Containersb">
+                <img src="/images/snare.jpg" style="height:100%; display: block; margin-right: auto; margin-left: auto;">
+                </div>
+            </div>
+
+            <div class = "card-header">STUDIO</div>         
            
 
     </div>
@@ -77,3 +118,51 @@
 
 
     </main>
+
+    <script>
+    
+        slidePosition = 1;
+        SlideShow(slidePosition);
+        
+        // forward/Back controls
+        function plusSlides(n) {
+          SlideShow(slidePosition += n);
+        }
+        
+        //  images controls
+        function currentSlide(n) {
+          SlideShow(slidePosition = n);
+        }
+        
+        function SlideShow(n) {
+          var i;
+          var slides = document.getElementsByClassName("b");
+          var circles = document.getElementsByClassName("dots");
+          if (n > slides.length) {slidePosition = 1}
+          if (n < 1) {slidePosition = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < circles.length; i++) {
+              circles[i].className = circles[i].className.replace(" enable", "");
+          }
+          slides[slidePosition-1].style.display = "block";
+          circles[slidePosition-1].className += " enable";
+        } 
+    
+        var slidePosition = 0;
+        SlideShow();
+    
+        function SlideShow() {
+        var i;
+        var slides = document.getElementsByClassName("Containersb");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slidePosition++;
+        if (slidePosition > slides.length) {slidePosition = 1}
+        slides[slidePosition-1].style.display = "block";
+        setTimeout(SlideShow, 3000); // Change image every 2 seconds
+        } 
+    
+        </script>
