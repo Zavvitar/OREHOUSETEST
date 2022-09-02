@@ -757,6 +757,14 @@ nav ul{
   height: 100%;
 }
 
+.smallimage2{
+  height: 100%;
+}
+
+.smallimage3{
+  height: 100%;
+}
+
 .boxthings30{
   display: none;
 }
@@ -803,7 +811,21 @@ nav ul{
 
   .smallimage{
     height: auto;
-    max-width: 640px;
+    max-width: 100vw;
+  }
+
+  .smallimage2{
+    height: auto;
+    max-width: 90vw;
+  }
+
+  .smallimage3{
+    height: auto;
+    max-width: 80vw;
+  }
+
+  .lessonsimage{
+    max-width: 100vw;
   }
 
   .boxthings{
@@ -852,6 +874,11 @@ nav ul{
   .mainpagetext2{
     font-size: 3vw;
   }
+
+  .card-text{
+    font-size: 3vw;
+  }
+
 
 
 .head{
