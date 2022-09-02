@@ -71,9 +71,6 @@ nav ul{
     grid-template-columns: repeat(6, 1fr);
 }
 
-.topNav{
-    display: none; //used for hamburger menu
-  }
 
 
 
@@ -129,6 +126,7 @@ nav ul{
 }
 
 .head2 {
+  position: fixed;
   display:grid;
   //font-family: $usedfont;
   height:100px;
@@ -236,9 +234,6 @@ nav ul{
 
     box-shadow: 12px 0px 5px -4px rgba(0, 0, 0, 0.164), -12px 0 5px -4px rgba(0,0,0,0.164);
 
-
-    background-size: fit;
-
   }
   
   .parallax-two::after {
@@ -313,6 +308,14 @@ nav ul{
 .boxthings9{
   margin-top: 50px;
   display: grid;
+  grid-template-columns: 2fr 1fr ;
+  max-height: 900px;
+  max-width: 1400px;
+}
+
+.boxthings90{
+  display: none;
+  margin-top: 50px;
   grid-template-columns: 2fr 1fr ;
   max-height: 900px;
   max-width: 1400px;
@@ -675,255 +678,255 @@ nav ul{
 
 
 
-
-
-
-
-  @media only screen and (max-width: 780px){
-    .twittercontainer{
-        margin:auto;
-        width: 400px;
-    }
-    iframe{
-
-        max-width: 400px;
-        max-height: 350px;
-    }
-    
-
-    .landingwords{
-        font-size: 30px;
-    }
-
-    .static-three > div {
-        padding-bottom: 0;
-    }
-
-    nav ul li a.active{
-        padding-top: 0;
-    }
-
-    html{
-        background: none;
-        background-color: #dadada;
-    }
-    .boxthings4{
-        grid: none;
-        padding-top: 2%;
-    }
-    .boxthings11{
-        padding-top: 0;
-    }
-    .foot{
-        display: none;
-    }
-    .memberspadding{
-        padding-bottom: 0;
-        height: 400px;
-    }
-    .boxthings12{
-        grid-template-rows: 0.5fr 0.6fr;
-    }
-    //.formboxthing{
-        //height: 10px;
-    //}
-    .card-header2{
-        padding-top: 0;
-        padding-bottom: 3px;
-        padding-right: 0;
-    }
-    .card-text2{
-        padding-top: 0;
-    }
-    .boxthings{
-        background-color: #dadada;
-        max-height:200%;
-        grid-template-rows: none;
-    }
-    .boxthings9{
-        display:none;
-        max-height: none;
-        padding-top: 3%;
-        grid-template-columns: 1fr;
-
-    }
-
-    .boxthings90{
-        grid-gap: 10px;
-        height: auto;
-        display:grid;
-        max-height: none;
-        padding-top: 3%;
-        grid-template-columns: 1fr;
-    }
-    .boxthings8{
-        display: grid;
-        height: 350px;
-        max-height: none;
-        grid-template-columns: none;
-        grid-template-rows: auto;
-    }
-    .boxthings12{
-    
-        font-size: 15px;
-    }
-    //.onlinemembers{
-
-       // font-size: 15px;
-    //}
-    .card-header{
-        color: black;
-        height: 0px;
-        padding-top: 5%;
-        padding-bottom: 0;
-        font-size: 30px;
-    }
-    .card-header2{
-        padding-bottom: 0;
-        padding-left: 0;
-        font-size: 30px;
-    }
-    .card-header4{
-        padding-bottom: 0;
-        font-size: 30px;
-    }
-    .card-header8{
-        font-size: 30px;
-    }
-    .card-header9{
-        font-size: 30px;
-    }
-    .card-headerinv{
-        font-size: 20px;
-    }
-    .card-text{
-        //overflow-y: scroll;
-        padding-top: 1%;
-        padding-right: 5%;
-        padding-left: 5%;
-        font-size: 15px;
-        padding-bottom: 0;
-    }
-    .banner{
-        max-width: 600px;
-    }
-    .head{
-        max-width: 600px;
-    }
-    .boxthings{
-        height: auto;
-        max-width: 600px;
-    }   
-    .foot{
-        max-width: 600px;
-    }
-    .head{
-        display: none;
-    }
-
-
-    .logoImg{
-        float: left;
-        background: no-repeat;
-        background-position: center;
-        background-size: contain;
-        height: 100px;
-        width: auto;
-        padding-left: 30px;
-        padding-right: 20px;
-      }
-      
-      .logoImg:hover{
-        transform: none;
-      }
-      
-      .topNav {
-        background-color: rgb(15, 15, 15);
-        width:100%;
-        overflow: hidden;
-      }
-        
-      .BurgerBackground{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0px;
-      }
-        .nav-ul{
-          background-color:transparent;
-          display: flex;
-          align-items: center;
-          padding: 0;
-          list-style-type: none;
-        } 
-          .nav-ul li a {
-            //font-family: "Starz-2016";
-            display: inline-block;
-            color:#303030;
-            text-align: center;
-            padding: 0px 40px;
-            text-decoration: none;
-            font-size: 15px;
-          }
-      
-          .nav-ul a:hover{
-            box-shadow: none;
-            color: #b1b1b1;
-            box-shadow: none;
-        }
-      
-      .hamburger{
-        background-color: transparent;
-        border: 0;
-        color:#303030;
-        cursor: pointer;
-        font-size: 30px;
-        display:none;
-        padding-right: 30px;
-
-      }
-      
-      .hamburger:focus{
-        outline: none;
-        -webkit-tap-highlight-color: transparent;
-      }  
-      
-      .nav-ul{
-          display: none;
-          flex-direction: column;
-          width: 100%;
-          -webkit-tap-highlight-color: transparent;
-        }    
-      
-        .nav-ul.show{
-            display: flex;
-            height: auto; 
-            -webkit-box-shadow: inset 0px 10px 14px -8px rgba(0,0,0,0.40);
-            -moz-box-shadow: inset 0px 10px 14px -8px rgba(0,0,0,0.40);
-            box-shadow: inset 0px 10px 14px -8px rgba(0,0,0,0.40);
-        }
-      
-        .topNav{
-          display: contents;
-        }
-      
-        .nav-ul li a {
-          //font-family: "Starz-2016";
-          margin-top:20px;
-          display: inline-block;
-          color:#303030;
-          text-align: center;
-          padding: 0px 30px;
-          text-decoration: none;
-          font-size: 23px;
-        }
-      
-      .hamburger{ //displays the burger icon
-        display: block;
-      }
-      
-      .BurgerBackground{ //used to add the backgrond colour onto the logo and burger icon
-        background-color: #cbcbcb;
-      }
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+.smallimage{
+  height: 100%;
+}
+
+.boxthings30{
+  display: none;
+}
+
+.boxthings31{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media only screen and (max-width: 780px){
+/* Hide the link that should open and close the topnav on small screens */
+.head .icon {
+  display: none;
+}
+
+.head2 .icon {
+  display: none;
+}
+
+    }
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1400px) {
+
+  .smallimage{
+    height: auto;
+    max-width: 640px;
+  }
+
+  .boxthings{
+    grid-template-rows: none;
+  }
+
+  .boxthings20{
+    display: none;
+  }
+
+  .boxthings11{
+    display: none;
+  }
+
+  .boxthings30{
+    display: block;
+  }
+
+  .boxthings31{
+    display: block;
+  }
+
+  .boxthings9{
+    display: none;
+  }
+
+  .boxthings90{
+    display: block;
+  }
+
+  .boxthings8{
+    grid-template-columns: none;
+  }
+
+
+
+  .mainpagetext1{
+    font-size: 6vw;
+  }
+  
+  .mainpagetext2{
+    font-size: 3vw;
+  }
+
+
+.head{
+  display: none;
+}
+.head2{
+  display:none;
+}
+ nav ul{
+    grid-template-columns: none;
+    grid-template-rows:repeat( 7, 1fr);
+    background: #dad8d8;
+    background: radial-gradient(circle, #210700 0%, #180500 86%, black 100%);
+ }
+ .mobileicon{
+  display: block;
+ }
+}
+ 
+.BurgerBackground{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+}
+  .nav-ul{
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    list-style-type: none;
+  } 
+    .nav-ul li a {
+      //font-family: "Starz-2016";
+      display: inline-block;
+      color:#dad8d8;
+      text-align: center;
+      padding: 0px 40px;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .nav-ul a:hover{
+      box-shadow: none;
+      color: #dad8d8;
+      box-shadow: none;
+  }
+
+.hamburger{
+  background-color: transparent;
+  border: 0;
+  color:#dad8d8;
+  cursor: pointer;
+  font-size: 30px;
+  display:none;
+  padding-right: 30px;
+
+}
+
+.hamburger:focus{
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}  
+
+.nav-ul{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }    
+
+  .nav-ul.show{
+      display: flex;
+      height: auto; 
+      -webkit-box-shadow: inset 0px 10px 14px -8px rgba(0,0,0,0.40);
+      -moz-box-shadow: inset 0px 10px 14px -8px rgba(0,0,0,0.40);
+      box-shadow: inset 0px 10px 14px -8px rgba(0,0,0,0.40);
+  }
+
+  .topNav{
+    display: contents;
+  }
+
+  .nav-ul li a {
+    //font-family: "Starz-2016";
+    margin-top:20px;
+    display: inline-block;
+    color:#dad8d8;
+    text-align: center;
+    padding: 0px 30px;
+    text-decoration: none;
+    font-size: 23px;
+  }
+
+.hamburger{ //displays the burger icon
+  display: block;
+}
+
+.BurgerBackground{ //used to add the backgrond colour onto the logo and burger icon
+  background: radial-gradient(circle, #210700 0%, #180500 86%, black 100%);
+
+}
+
+
+
